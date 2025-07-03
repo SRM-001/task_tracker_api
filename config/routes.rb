@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   post "/register", to: "authorization#register"
   post "/login", to: "authorization#login"
+
+  resources :projects do
+    resources :tasks, only: [:create, :index]
+  end
+
+  resources :tasks, only: [:update, :destroy]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

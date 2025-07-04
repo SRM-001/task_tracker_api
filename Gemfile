@@ -46,3 +46,6 @@ group :development, :test do
 end
 
 
+
+gem "graphql", "~> 2.5"
+gem "graphiql-rails", "~> 1.8"

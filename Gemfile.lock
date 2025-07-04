@@ -95,8 +95,15 @@ GEM
     erb (4.0.4)
       cgi (>= 0.3.3)
     erubi (1.13.1)
+    fiber-storage (1.0.1)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    graphiql-rails (1.10.5)
+      railties
+    graphql (2.5.9)
+      base64
+      fiber-storage
+      logger
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
     io-console (0.8.0)
@@ -270,6 +277,8 @@ DEPENDENCIES
   brakeman
   cancancan
   debug
+  graphiql-rails (~> 1.8)
+  graphql (~> 2.5)
   jwt
   pg (~> 1.1)
   puma (>= 5.0)
